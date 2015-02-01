@@ -1,0 +1,13 @@
+{
+  "name": "dreamteam",
+  "version": "1.0.0",
+  "dependencies": {
+    "foundation": ">=5.2.3",
+    "FlipClock": "~0.7.0",
+    "modernizr": "~2.8.2"
+  },
+  "devDependencies": {
+    "bourbon": "~4.0.2",
+    "csswizardry-grids": "~2.2.0"
+  }
+}
