@@ -1,0 +1,40 @@
+.random_inputs, .random_clock, .random_message {
+  @include grid-row();
+}
+
+.random_inputs__minutes {
+  @include grid-column(4);
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+}
+
+.random__button_wrapper {
+  @include grid-column(4);
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+}
+
+.random__button {
+  @include button($padding: $button-tny, $radius: true);
+  @media #{$small-only} {
+    width: 100%;
+  }
+
+}
+
+.random_message__dispaly {
+  @include grid-column(10, $push: 2);
+}
+
+.random_clock {
+  @include grid-row();
+}
+
+.random_clock__display {
+  @include grid-column(11, $push: 1);
+  @media #{$small-only} {
+    @include grid-column(12, $push: 0);
+  }
+}

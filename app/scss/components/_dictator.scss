@@ -1,0 +1,36 @@
+.dictator_inputs, .dictator_output {
+  @include grid-row();
+}
+
+.dictator__number {
+  @include grid-column(3);
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+}
+
+.dictator__name {
+  @include grid-column(5);
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+}
+.dictator__button_wrapper {
+  @include grid-column(4);
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+}
+
+.dictator__button {
+  @include button($padding: $button-tny, $radius: true);
+  @media #{$small-only} {
+    width: 100%;
+  }
+}
+
+.currentDictator {
+  text-align: center;
+  font-size: 40px;
+  line-height: 2;
+}

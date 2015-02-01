@@ -14,7 +14,7 @@ gulp.task('styles', function () {
   return sass('app/scss/app.scss',
     {
       sourcemap: true,
-      loadPath: [config.bower + '/foundation/scss']
+      loadPath: [config.bower + '/foundation/scss', config.bower]
     })
     // .pipe(prefix('last 1 version'))  // add vendor prefixes if necessary
     .pipe(gulp.dest(config.dist + '/styles'))

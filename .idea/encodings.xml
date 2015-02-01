@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/app/jade/templates/card.jade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/jade/templates/dictator.jade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/jade/templates/index.jade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/dictator.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/random.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/timer.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/week.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scss/components/_card.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scss/components/_dictator.scss" charset="UTF-8" />
+  </component>
 </project>

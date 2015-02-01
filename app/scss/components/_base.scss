@@ -2,3 +2,39 @@
    Base Stylesheet
    _base.scss
    ========================================================================== */
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 4em !important; //TODO: FIX
+}
+
+.headline {
+  @include grid-row();
+}
+
+.headline__text {
+  @include grid-column(6, $push: 2);
+}
+
+.flip-clock-label {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif !important; //TODO: FIX
+}
+
+body {
+  background: url(http://subtlepatterns.com/patterns/sativa.png);
+  font-family: 'Montserrat', sans-serif;
+}
+
+@import "random";
+@import "dictator";
+
+.RWDCARD {
+  box-shadow: 1px 1px 10px 3px #BDBDBD;
+  border-radius: 5px;
+  padding-top: 10px;
+  background-color: white;
+}

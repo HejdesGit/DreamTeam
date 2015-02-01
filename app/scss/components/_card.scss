@@ -1,0 +1,340 @@
+.dictator_output__list {
+  list-style: none;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,100,200);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+#aboutPage .pageTitle {
+  font: 72px 'Raleway', sans-serif;
+  color: #fff;
+  color: rgba(255, 255, 255, .8);
+  width: 100%;
+  text-align: center;
+  font-weight: 100;
+  text-shadow: 1px 1px 41px #000;
+  height: 100px;
+  margin: 0 0 30px 0;
+}
+
+#aboutPage * {
+  box-sizing: border-box;
+}
+
+#aboutPage .fa {
+  color: #444;
+}
+
+#aboutPage .fa:hover {
+  color: #3498db;
+  transition: .4s;
+}
+
+.aboutAnimate {
+  -webkit-animation-delay: .8s;
+  -moz-animation-delay: .8s;
+  -o-animation-delay: .8s;
+  animation-delay: .8s;
+}
+
+.aboutMe {
+  position: relative;
+  width: 310px;
+  //  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 3px #444;
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, .3);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -moz-transition: -moz-transform 0.5s ease;
+  -o-transition: -o-transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.aboutMe .card-front .aboutHeader {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 310px;
+  height: 60px;
+  position: relative;
+  background: url(http://felipemartinin.com.br/wp-content/themes/FelipeMartinin/img/card-header.jpg);
+}
+
+.aboutHeaderText {
+  //  position: absolute;
+  font: 32px 'Raleway', sans-serif;
+  font-weight: 100;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  top: 10px;
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+
+.aboutHeader .headerProfile {
+  //  position: absolute;
+  z-index: 1;
+  border-radius: 100%;
+  background: #fff;
+  box-shadow: 1px 1px 10px 1px #666;
+  top: 95px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.headerProfile:hover {
+  -moz-animation: bounce 0.9s ease-out;
+  -o-animation: bounce 0.9s ease-out;
+  -ms-animation: bounce 0.9s ease-out;
+  -webkit-animation: bounce 0.9s ease-out;
+  animation: bounce 0.9s ease-out;
+}
+
+.aboutHeader h1 {
+  //  position: absolute;
+  font: 23px 'Raleway', sans-serif;
+  color: #fff;
+  color: rgba(255, 255, 255, .8);
+  text-shadow: 1px 1px 10px #111;
+  top: 105px;
+  left: 145px;
+  font-weight: 200;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.aboutHeader p {
+  //  position: absolute;
+  font: 12px 'Open Sans', sans-serif;
+  color: #666;
+  top: 155px;
+  left: 145px;
+  z-index: 1;
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+  -o-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+
+.aboutMe .card-front .frontContent {
+  width: 310px;
+  background: #fff;
+  padding: 60px 10px 5px;
+}
+
+.aboutMe .card-front .frontContent p {
+  font: 12px 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #888;
+  text-align: justify;
+}
+
+.socialIcons {
+  position: relative;
+  border-top: 1px solid #dfdfdf;
+  background: #fff;
+  width: 310px;
+}
+
+.socialIcons a i {
+  padding: 10px 12px;
+  border-right: 1px solid #dfdfdf;
+
+}
+
+.socialIcons a .first-icon {
+  margin-left: 10px;
+  padding-right: 15px;
+
+}
+
+.socialIcons a .last-icon {
+  border-right: none;
+
+}
+
+.aboutFooter {
+  position: relative;
+  width: 310px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  padding: 17px 10px;
+}
+
+.middleFront {
+  background-color: white;
+}
+
+.aboutFooter a {
+  position: relative;
+  padding: 10px 40px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.aboutFooter .goContact {
+  background: #1abc9c;
+  color: #fff;
+  font: 16px 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin: 15px 0px 5px 0px;
+}
+
+.aboutFooter .goContact:hover {
+  background: #2bcdad;
+  transition: .4s;
+}
+
+.aboutFooter .goFlip {
+  background: #fff;
+  border: 1px solid #ccc;
+  font: 14px 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #666;
+}
+
+.aboutFooter .goFlip:hover {
+  background: #666;
+  transition: .4s;
+  border: 1px solid #666;
+  color: #fff;
+}
+
+.twitterIcon {
+  content: url(http://www.corujalivraria.com.br/assets/twitter-icon-a7d78a313aebc7b78923dc06b614c30d.png);
+  width: 40px;
+}
+
+.card-front {
+  z-index: 10;
+}
+
+.card-back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  top: 0;
+  overflow: hidden;
+}
+
+.aboutMe .card-back .aboutHeader {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 310px;
+  height: 60px;
+  position: relative;
+  background: url(http://felipemartinin.com.br/wp-content/themes/FelipeMartinin/img/card-header.jpg);
+}
+
+.aboutMe .card-back .aboutHeader h2 {
+  //  position: absolute;
+  font: 32px 'Raleway', sans-serif;
+  font-weight: 100;
+  color: #fff;
+  color: rgba(255, 255, 255, .8);
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  top: 10px;
+  -webkit-animation-delay: .4s;
+  -moz-animation-delay: .4s;
+  -o-animation-delay: .4s;
+  animation-delay: .4s;
+}
+
+.aboutMeContainer {
+  width: 310px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  //  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.aboutMe .card-back .backContent-wrap {
+  background: #fff;
+  position: relative;
+  padding: 20px 0px;
+}
+
+.aboutMe .card-back .backContent {
+  position: relative;
+  background: #fff;
+  overflow: auto;
+  -webkit-animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  -o-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+.aboutMe .card-back .backContent p {
+  padding: 0px 10px 25px;
+  margin: 0;
+  font: 12px 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #888;
+}
+
+.aboutMe .card-back .backContent p b {
+  color: #555;
+}
+
+.aboutMe .card-back .backContent .list {
+  line-height: 20px;
+}
+
+.aboutMe .card-back .backContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-back .goFlip {
+  padding: 10px 50px;
+}
+
+/* Track */
+.aboutMe .card-back .backContent::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+.aboutMe .card-back .backContent::-webkit-scrollbar-thumb {
+  opacity: 0.1;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.rotate-3d {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.z-up {
+  z-index: 10;
+}
+
+.aboutMe.rotate-3d .card-front {
+  display: none;
+}
+
+.aboutMeContainer.card-back {
+  display: none;
+}
+
+.aboutMeContainer.card-back.z-up {
+  display: block;
+}

@@ -1,0 +1,22 @@
+.row
+  .large-10.push-2.columns
+    section#aboutPage
+      .aboutMe
+        article.aboutMeContainer.card-front
+          header.aboutHeader
+            h2.aboutHeaderText DreamTalker
+          .middleFront
+            .currentDictator
+          footer.aboutFooter
+            a.goFlip Inställningar >
+        // card back
+        .aboutMeContainer.card-back
+          header.aboutHeader
+            h2.animated Inställningar
+          .backContent-wrap
+            .row
+              .large-12.columns
+                include dictator
+            ul.dictator_output__list
+          footer.aboutFooter
+            a.goFlip < Front
