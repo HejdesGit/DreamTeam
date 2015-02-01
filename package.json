@@ -45,7 +45,8 @@
     "jquery": "^2.1.1",
     "lodash": "^2.4.1",
     "howler": "~1.1.25",
-    "firebase": "~2.1.2"
+    "firebase": "~2.1.2",
+    "express": "~4.11.1"
   },
   "browser": {
     "FlipClock": "./app/bower_components/FlipClock/compiled/flipclock.min.js"

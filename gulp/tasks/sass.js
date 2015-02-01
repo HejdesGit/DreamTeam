@@ -7,14 +7,14 @@ var csso = require('gulp-csso');
 var fingerprint = require('gulp-fingerprint');
 var size = require('gulp-size');
 var sass = require('gulp-ruby-sass');
+var loadPath = [config.bower + '/foundation/scss', config.bower];
 
 // Styles
 gulp.task('styles', function () {
-  // See https://github.com/andrew/node-sass for more options
   return sass('app/scss/app.scss',
     {
       sourcemap: true,
-      loadPath: [config.bower + '/foundation/scss', config.bower]
+      loadPath: loadPath
     })
     // .pipe(prefix('last 1 version'))  // add vendor prefixes if necessary
     .pipe(gulp.dest(config.dist + '/styles'))
@@ -23,15 +23,14 @@ gulp.task('styles', function () {
 
 // Styles Dist
 gulp.task('styles:dist', function () {
-  var manifest = require('../../dist/image-manifest');
-  // See https://github.com/andrew/node-sass for more options
+  //var manifest = require('../../dist/image-manifest.json');
   return sass('app/scss/app.scss',
     {
       sourcemap: true,
-      loadPath: [config.bower + '/foundation/scss']
+      loadPath: loadPath
     })
     // .pipe(prefix('last 1 version'))  // add vendor prefixes if necessary
-    .pipe(fingerprint(manifest, {verbose: true}))
+    //.pipe(fingerprint(manifest, {verbose: true}))
     .pipe(csso())  // minify css
     .pipe(gulp.dest(config.dist + '/styles'))
     .pipe(size());
