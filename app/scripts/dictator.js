@@ -31,6 +31,7 @@ module.exports = (function () {
     firebaseURL.once('value', function (snap) {
       //console.log('initial data loaded!', Object.keys(snap.val()).length === count);
       getCurrentDictator();
+      getMinutesFromFirebase();
     });
 
     readSingleFromFirebase();
@@ -55,6 +56,19 @@ module.exports = (function () {
   function getDictatorsFromFirebase() {
     firebaseURL.child("dictator").on('value', function (snapshot) {
       dictators = snapshot.val();
+    }, function (errorObject) {
+      console.log('The read failed: ' + errorObject.code);
+    });
+  }
+
+  function getMinutesFromFirebase() {
+    firebaseURL.child("StandUp").on('value', function (snapshot) {
+      var totalStandUpMinutes=0;
+      var standupMinutes = snapshot.val();
+      for (var obj in standupMinutes) {
+        totalStandUpMinutes = totalStandUpMinutes +standupMinutes[obj];
+      }
+      $('.headline__text2').text(' ' + totalStandUpMinutes + ' minuter');
     }, function (errorObject) {
       console.log('The read failed: ' + errorObject.code);
     });

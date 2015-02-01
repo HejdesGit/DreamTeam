@@ -30,6 +30,10 @@ module.exports = (function () {
     urls: [config.urls]
   });
 
+  var sound2 = new Howl({
+    urls: ['sounds/smb_1-up.wav']
+  });
+
   function Init() {
     button = $(config.button);
     getLocalStorage();
@@ -47,7 +51,6 @@ module.exports = (function () {
       displayRandomNumber();
       setLocalStorage();
       setTimeInFirebase();
-      console.log("play sound");
       sound.play();
     });
   }
@@ -85,6 +88,7 @@ module.exports = (function () {
       callbacks: {
         stop: function () {
           $('.random_message__dispaly').html('Bra jobbat!');
+          sound2.play();
         }
       }
     });
@@ -97,6 +101,7 @@ module.exports = (function () {
       callbacks: {
         stop: function () {
           $('.random_message__dispaly').html('Bra jobbat!');
+          sound2.play();
         }
       }
     });

@@ -3,7 +3,6 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/app/jade/templates/card.jade" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/jade/templates/dictator.jade" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/jade/templates/index.jade" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/dictator.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/random.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/timer.js" charset="UTF-8" />
