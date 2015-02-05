@@ -17,7 +17,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:300,100,200);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 meta.foundation-version {
-  font-family: "/5.5.0/"; }
+  font-family: "/5.5.1/"; }
 
 meta.foundation-mq-small {
   font-family: "/only screen/";
@@ -115,8 +115,7 @@ img {
   clear: both; }
 
 .hide {
-  display: none !important;
-  visibility: hidden; }
+  display: none; }
 
 .invisible {
   visibility: hidden; }
@@ -1171,6 +1170,7 @@ button, .button {
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none;
+  -moz-appearance: none;
   border-radius: 0;
   display: inline-block;
   padding-top: 1rem;
@@ -1402,7 +1402,7 @@ label {
   padding-bottom: 0;
   border-style: solid;
   border-width: 1px;
-  overflow: hidden;
+  overflow: visible;
   font-size: 0.875rem;
   height: 2.3125rem;
   line-height: 2.3125rem; }
@@ -1501,7 +1501,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 
 form .row .prefix-radius.row.collapse input,
 form .row .prefix-radius.row.collapse textarea,
-form .row .prefix-radius.row.collapse select {
+form .row .prefix-radius.row.collapse select,
+form .row .prefix-radius.row.collapse button {
   border-radius: 0;
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -1515,7 +1516,8 @@ form .row .prefix-radius.row.collapse .prefix {
   border-top-left-radius: 3px; }
 form .row .postfix-radius.row.collapse input,
 form .row .postfix-radius.row.collapse textarea,
-form .row .postfix-radius.row.collapse select {
+form .row .postfix-radius.row.collapse select,
+form .row .postfix-radius.row.collapse button {
   border-radius: 0;
   -webkit-border-bottom-left-radius: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -1529,7 +1531,8 @@ form .row .postfix-radius.row.collapse .postfix {
   border-top-right-radius: 3px; }
 form .row .prefix-round.row.collapse input,
 form .row .prefix-round.row.collapse textarea,
-form .row .prefix-round.row.collapse select {
+form .row .prefix-round.row.collapse select,
+form .row .prefix-round.row.collapse button {
   border-radius: 0;
   -webkit-border-bottom-right-radius: 1000px;
   -webkit-border-top-right-radius: 1000px;
@@ -1543,7 +1546,8 @@ form .row .prefix-round.row.collapse .prefix {
   border-top-left-radius: 1000px; }
 form .row .postfix-round.row.collapse input,
 form .row .postfix-round.row.collapse textarea,
-form .row .postfix-round.row.collapse select {
+form .row .postfix-round.row.collapse select,
+form .row .postfix-round.row.collapse button {
   border-radius: 0;
   -webkit-border-bottom-left-radius: 1000px;
   -webkit-border-top-left-radius: 1000px;
@@ -1596,6 +1600,8 @@ select {
   select:disabled {
     background-color: #DDDDDD;
     cursor: default; }
+  select[multiple] {
+    height: auto; }
 
 /* Adjust margin for form elements below */
 input[type="file"],
@@ -1839,6 +1845,7 @@ body {
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none;
+  -moz-appearance: none;
   border-radius: 0;
   display: inline-block;
   padding-top: 0.625rem;
@@ -1960,6 +1967,7 @@ body {
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none;
+  -moz-appearance: none;
   border-radius: 0;
   display: inline-block;
   padding-top: 0.625rem;
